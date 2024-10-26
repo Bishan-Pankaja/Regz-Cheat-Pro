@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>NC X REGz</title>
+  <title>Regz Cheat</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- linking css file -->
@@ -15,76 +15,194 @@
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <style>
+  
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 0px;
+      gap: 15px;
+    }
 
+    .navbar {
+      z-index: 1000;
+    }
+
+    .card {
+      width: 250px;
+      height: 354px;
+      background: #1b1b1b;
+      position: relative;
+      border-radius: 12px;
+      box-shadow: 0px 10px 10px 0 #1b1b1b;
+      text-align: center;
+      margin: 10px;
+    }
+
+    .card .card-image {
+      height: 70px;
+      margin-top: 15px;
+      color: #c8c8c8;
+      filter: drop-shadow(0 0 5px #111111);
+    }
+
+    .card .card-info {
+      color: #fff;
+      padding: 10px;
+    }
+
+    .card .card-price-tag {
+      position: absolute;
+      right: 12px;
+      top: 10px;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 5px;
+      background: linear-gradient(#df29ff, #dc0ba5);
+    }
+
+    .add-to-cart-btn {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .add-to-cart-btn button {
+      border: none;
+      font-size: 10px;
+      padding: 6px 20px;
+      color: #fff;
+      font-weight: bold;
+      background: linear-gradient(45deg, transparent, #f532f1 40%, #a141fb 60%, transparent);
+      border-radius: 30px;
+      transition: 0.4s ease-in-out;
+    }
+
+    .add-to-cart-btn button:hover {
+      background-position: 100% 100%;
+    }
+  </style>
 </head>
 
-<body class="body">
-    <!-- background effect -->
-    <div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-     </div>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glassmorphism">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Regz Cheat</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Product.html">Product</a></li>
+          <li class="nav-item"><a class="nav-link" href="Store.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Download</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-      <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glassmorphism">
-        <div class="container">
-            <a class="navbar-brand " href="index.html">NC X REGz</a>
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Project.html">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Store.html">Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Download</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">Contact</a>
-                    </li>
-                </ul>               
-            </div>
-        </div>
-    </nav>
-    <!-- Cards Section -->
+  <section class="serviceContainer" >
+        
+    </section>
+
+  <!-- Card Section -->
   <div class="container">
-    <div class="master-container mt-5">
-      <div class="card">
-       
-        </div>
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="card-price-tag">$100</div>
+      <svg class="card-image" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" viewBox="0 0 16 16">
+        <!-- SVG path for icon -->
+      </svg>
+      <div class="card-info">
+        <span class="product-title">PRODUCT 1</span>
+        <p>High quality product 1 description</p>
       </div>
-
-      <div class="card">
-        <label class="title">Card 2</label>
-        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <span class="price">$24.99</span>
+      <div class="add-to-cart-btn">
+        <button>Buy Now</button>
       </div>
+    </div>
 
-      <div class="card">
-        <label class="title">Card 3</label>
-        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <span class="price">$29.99</span>
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="card-price-tag">$120</div>
+      <svg class="card-image" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" viewBox="0 0 16 16">
+        <!-- SVG path for icon -->
+      </svg>
+      <div class="card-info">
+        <span class="product-title">PRODUCT 2</span>
+        <p>High quality product 2 description</p>
       </div>
+      <div class="add-to-cart-btn">
+        <button>Buy Now</button>
+      </div>
+    </div>
 
-      <div class="card">
-        <label class="title">Card 4</label>
-        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <span class="price">$34.99</span>
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="card-price-tag">$150</div>
+      <svg class="card-image" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" viewBox="0 0 16 16">
+        <!-- SVG path for icon -->
+      </svg>
+      <div class="card-info">
+        <span class="product-title">PRODUCT 3</span>
+        <p>High quality product 3 description</p>
+      </div>
+      <div class="add-to-cart-btn">
+        <button>Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="card-price-tag">$200</div>
+      <svg class="card-image" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" viewBox="0 0 16 16">
+        <!-- SVG path for icon -->
+      </svg>
+      <div class="card-info">
+        <span class="product-title">PRODUCT 4</span>
+        <p>High quality product 4 description</p>
+      </div>
+      <div class="add-to-cart-btn">
+        <button>Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <div class="card-price-tag">$250</div>
+      <svg class="card-image" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" viewBox="0 0 16 16">
+        <!-- SVG path for icon -->
+      </svg>
+      <div class="card-info">
+        <span class="product-title">PRODUCT 5</span>
+        <p>High quality product 5 description</p>
+      </div>
+      <div class="add-to-cart-btn">
+        <button>Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+      <div class="card-price-tag">$300</div>
+      <svg class="card-image" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" viewBox="0 0 16 16">
+        <!-- SVG path for icon -->
+      </svg>
+      <div class="card-info">
+        <span class="product-title">PRODUCT 6</span>
+        <p>High quality product 6 description</p>
+      </div>
+      <div class="add-to-cart-btn">
+        <button>Buy Now</button>
       </div>
     </div>
   </div>
-
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
-
 </body>
-
 </html>
